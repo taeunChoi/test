@@ -7,6 +7,7 @@ class Solution {
         ListNode p1 = head;
         ListNode p2 = head.next;
         while(p2 != null) {
+            // 짝홀처리
             p1.next = p2.next == null? null :(p2.next.next==null? p2.next: (p2.next.next));
             //swap
             ListNode tmp = p2.next;
